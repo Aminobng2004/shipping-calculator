@@ -1,0 +1,127 @@
+/* Basic reset and body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    direction: rtl; /* Right-to-left text direction */
+}
+
+/* Container styles */
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.8s ease-out;
+    text-align: right; /* Right-align text */
+}
+
+/* Animation for container */
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Heading styles */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Select and button styles */
+select, button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Focus and hover styles for select and button */
+select:focus, button:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Result box styles */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    animation: appear 0.5s ease-out;
+}
+
+/* Animation for result display */
+.result {
+    animation: appear 0.5s ease-out;
+}
+
+/* Hover effect for form labels */
+.form-group label:hover {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Styles for select dropdown */
+.form-group select {
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group select:hover {
+    border-color: #007BFF;
+    background-color: #e9ecef;
+}
+
+.form-group select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
